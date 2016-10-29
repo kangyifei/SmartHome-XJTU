@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/title_appIcon"
+        android:layout_width="30dip"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:contentDescription="APP图标"
+        android:gravity="center"
+        android:src="@drawable/icon" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="5dip"
+        android:layout_toRightOf="@id/title_appIcon"
+        android:gravity="center_vertical"
+        android:text="@string/app_name"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp" />
+
+    <ImageView
+        android:id="@+id/title_BrainWaveSignal"
+        android:layout_width="15dip"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dip"
+        android:contentDescription="脑电波信号"
+        android:gravity="center_vertical"
+        android:src="@drawable/brainwave_signal00" />
+
+    <TextView
+        android:id="@+id/title_BrainWaveSignalText"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_marginRight="10dip"
+        android:layout_toLeftOf="@id/title_BrainWaveSignal"
+        android:gravity="center_vertical"
+        android:text="脑电波信号:"
+        android:textColor="#ABACAC"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/title_conditionTasks"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="10dip"
+        android:layout_toLeftOf="@id/title_BrainWaveSignalText"
+        android:contentDescription="打开条件任务页面"
+        android:src="@drawable/conditiontask" />
+
+</RelativeLayout>
+
+

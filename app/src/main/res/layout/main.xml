@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:id="@android:id/tabhost"
+        >
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+        </FrameLayout>
+        <TabWidget
+                android:id="@android:id/tabs"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+
+        <!-- 视觉上,用单选按钮替代TabWidget -->
+        <RadioGroup
+                android:id="@+id/main_radiogroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/mmfooter_bg"
+                android:paddingTop="8dp"
+                android:orientation="horizontal"
+                >
+            <RadioButton
+                    android:id="@+id/tab_icon_weixin"
+                    android:checked="true"
+                    android:textColor="@color/tab_text"
+                    android:drawableTop="@drawable/tab_weixin"
+                    android:text="聊天"
+                    style="@style/tab_button_bg"
+                    />
+            <RadioButton
+                    android:id="@+id/tab_icon_setting"
+                    android:textColor="@color/tab_text"
+                    android:drawableTop="@drawable/tab_set"
+                    android:text="设置"
+                    style="@style/tab_button_bg"
+                    />
+        </RadioGroup>
+    </LinearLayout>
+</TabHost>

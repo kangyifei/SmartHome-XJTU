@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">smarthome</string>
+    <string name="close_state">程序未运行</string>
+    <string name="open_state">程序运行中</string>
+    <string name="btn_open">开始</string>
+    <string name="btn_close">结束</string>
+</resources>

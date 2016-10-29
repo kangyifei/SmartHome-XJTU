@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <!--<LinearLayout-->
+            <!--android:id="@+id/line1"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:orientation="vertical">-->
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                >
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="语记状态"
+                    android:textSize="30sp"
+                    android:gravity="center"
+                    />
+
+            <TextView
+                    android:id="@+id/tv_yuji_state"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="test"
+                    android:gravity="center"
+                    />
+
+            <Button
+                    android:id="@+id/btn_yuji"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="下载"
+                    android:gravity="center"
+                    />
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                >
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="蓝牙状态"
+                    android:textSize="30sp"
+                    android:gravity="center"
+                    />
+
+            <TextView
+                    android:id="@+id/tv_bluetooth_state"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="test"
+                    android:gravity="center"
+                    />
+
+            <Button
+                    android:id="@+id/btn_bluetooth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="设置"
+                    android:gravity="center"
+                    />
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                >
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="脑波设备状态"
+                    android:textSize="30sp"
+                    android:gravity="center"
+                    />
+
+            <TextView
+                    android:id="@+id/tv_brainwave_state"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="未连接"
+                    android:gravity="center"
+                    />
+
+            <Button
+                    android:id="@+id/btn_brainwave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="连接"
+                    android:gravity="center"
+                    />
+        </LinearLayout>
+        <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                >
+
+            <TableRow
+                    android:gravity="center">
+                <Button
+                        android:id="@+id/btn_buletooth_search_clear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="清除主控数据"
+                        android:layout_marginTop="3sp"
+                        android:layout_gravity="center_horizontal"/>
+                <Button
+                        android:id="@+id/btn_condition_clear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="清除用户数据"
+                        android:layout_marginTop="3sp"
+                        android:layout_gravity="center_horizontal"/>
+
+            </TableRow>
+        </TableLayout>
+    <!--</LinearLayout>-->
+
+</LinearLayout>
