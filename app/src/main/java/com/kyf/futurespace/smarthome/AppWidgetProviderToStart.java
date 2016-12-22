@@ -29,8 +29,9 @@ import static android.content.ContentValues.TAG;
             Uri data = intent.getData();
             int buttonId = Integer.parseInt(data.getSchemeSpecificPart());
             if (buttonId == BUTTON_SHOW) {
-                Intent acIntent=new Intent(context,MainActivity.class);
+                Intent acIntent=new Intent(context,AppwidgetActivity.class);
                 acIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                acIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 context.startActivity(acIntent);
                 Log.d(TAG, "Button wifi clicked");
             }

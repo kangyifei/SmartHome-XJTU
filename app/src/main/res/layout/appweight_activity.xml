@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.cunoraz.gifview.library.GifView
+            android:id="@+id/gif1"
+            android:layout_width="224sp"
+            android:layout_height="224sp"
+            android:visibility="visible"
+            custom:gif="@drawable/microphone_gif"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            />
+        <!--<ImageView-->
+            <!--android:id="@+id/iv_list_micro"-->
+            <!--android:layout_width="40sp"-->
+            <!--android:layout_height="40sp"-->
+            <!--android:src="@drawable/microphone"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_centerHorizontal="true"/>-->
+    <ListView
+        android:id="@+id/lv_appwidget"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/gif1"
+        android:divider="@null"
+        android:listSelector="@android:color/transparent"
+        android:transcriptMode="alwaysScroll">
+    </ListView>
+
+    </RelativeLayout>
+</LinearLayout>

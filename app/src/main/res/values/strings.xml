@@ -5,4 +5,5 @@
     <string name="open_state">程序运行中</string>
     <string name="btn_open">开始</string>
     <string name="btn_close">结束</string>
+    <string name="welcome">主人请吩咐</string>
 </resources>

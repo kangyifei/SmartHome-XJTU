@@ -3,6 +3,7 @@ package com.kyf.futurespace.smarthome.Chat;
 import android.content.Context;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.Message;
 import android.util.Log;
 import android.widget.Toast;
 import com.iflytek.cloud.*;
@@ -84,8 +85,9 @@ public class TextToVoice {
 //                            .sendToTarget();
 //                }
 //                else {
-                mHandler.obtainMessage(HandlerMessageWhat.Chatting_FINISHED)
-                        .sendToTarget();
+                Message msg = new Message();
+                msg.what= HandlerMessageWhat.Chatting_FINISHED;
+                mHandler.sendMessage(msg);
 //                }
 
             } else if (error != null) {

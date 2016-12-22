@@ -35,6 +35,7 @@
         <activity android:name="com.kyf.futurespace.smarthome.ChatActivity"></activity>
         <activity android:name="com.kyf.futurespace.smarthome.SettingActivity"></activity>
         <activity android:name="com.kyf.futurespace.smarthome.brain.ConditionTaskActivity"></activity>
+        <activity android:name="com.kyf.futurespace.smarthome.AppwidgetActivity"></activity>
 
         <receiver android:name="com.kyf.futurespace.smarthome.utils.DelayTimeReceiver"></receiver>
         <receiver android:name="com.kyf.futurespace.smarthome.AppWidgetProviderToStart">
